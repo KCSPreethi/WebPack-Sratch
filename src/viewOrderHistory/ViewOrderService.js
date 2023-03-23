@@ -1,4 +1,4 @@
-class ViewOrderService {
+export class ViewOrderService {
   async viewOrderServiceFetch() {
     var userName = window.localStorage.getItem('userId');
     const response = await fetch(

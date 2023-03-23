@@ -1,8 +1,14 @@
+
+
+window.onload=function(){
+
 const viewHistoryButton = document.getElementById('viewHistory');
 viewHistoryButton.onclick = function () {
   let orderHistory = new OrderHistory();
   orderHistory.getOrderHistory();
 };
+  
+}
 
 export default class OrderHistory {
   getOrderHistory() {
