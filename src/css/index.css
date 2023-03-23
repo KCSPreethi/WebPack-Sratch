@@ -1,0 +1,49 @@
+h1 {
+    font-size: 36px;
+    line-height: 100px;
+    text-align: center;
+    background-color: skyBlue;
+}
+body{
+  background: url("./../images/stock.png");
+}
+
+.container {
+width: 500px;
+height: 500px;
+padding-top: 300px;
+padding-left: 500px;
+}
+#btn{
+font-size: 100px;
+}
+
+.block1 {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #90EE90;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.userName {
+width: 100px;
+height: 100px;
+padding-top: 50px;
+padding-left: 650px;
+}
+
+
+.block2 {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color:#90EE90;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}

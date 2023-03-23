@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Add Order</title>
+    <h1 class="headadd">Place a Order</h1>
+    <link href="AddOrder.css" rel="stylesheet" />
+  </head>
+  <body>
+    <fieldset class="fl" style="">
+      <legend>Add Elements</legend>
+      <div class="getElements">
+        <form action="#" id="form1">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" /><br /><br />
+
+          <label>Type</label>
+          <input
+            type="radio"
+            id="buy"
+            name="type"
+            value="BUY"
+            onfocus="buySellCheck()"
+          />
+          <label for="buy">BUY</label>
+          <input
+            type="radio"
+            id="sell"
+            name="type"
+            value="SELL"
+            onfocus="buySellCheck()"
+          />
+          <label for="sell">SELL</label><br /><br />
+
+          <label for="price">Price:</label>
+          <input type="number" id="price" name="price" /><br /><br />
+
+          <label for="esopType">ESOP Type:</label>
+
+          <select name="esopType" id="esopType">
+            <option value="NORMAL">NORMAL</option>
+            <option value="PERFORMANCE">PERFORMANCE</option>
+          </select>
+          <br />
+          <br />
+
+          <input type="submit" class="btn" value="Place Order" />
+        </form>
+      </div>
+    </fieldset>
+    <h3 id="message"></h3>
+
+    <script src="AddOrderForUser.js"></script>
+  </body>
+</html>
