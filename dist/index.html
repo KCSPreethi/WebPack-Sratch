@@ -1,42 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>ESOPS Trading Platform</title>
-    <link href="/src/css/index.css" rel="stylesheet" type="text/css" />
-    <script defer src="/dist/app.js"></script>
-<script defer src="./app.js"></script><link href="./main.css" rel="stylesheet"></head>
-
-<body>
-    <h1>ESOPS Trading Platform</h1>
-
-    <div class ="userName">
-        <table>
-            <td><label for="fname" style="font-size: 20px; color:white">UserName</label></td>
-            <td><input type="text" id="fname" name="fname" placeholder="Enter userName" ></td>
-            <td><button class= "fieldName" onclick="inputStorage()" >Add UserName</button></td>
-        </table>
-
-    </div>
-
-    <div class="container">
-    <button class="block1" onclick="addOrder()" >Place Order </button>&nbsp;&nbsp;&nbsp
-    <button class= "block2" onclick="viewOrders()" >View Order History</button>
-    </div>
-    <script>
-        function addOrder() {
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><title>ESOPS Trading Platform</title><link href="/src/css/index.css" rel="stylesheet"/><script defer="defer" src="/dist/app.js"></script><script defer="defer" src="./app.js"></script><link href="./main.css" rel="stylesheet"></head><body><h1>ESOPS Trading Platform</h1><div class="userName"><table><td><label for="fname" style="font-size: 20px; color:white">UserName</label></td><td><input id="fname" name="fname" placeholder="Enter userName"></td><td><button class="fieldName" onclick="inputStorage()">Add UserName</button></td></table></div><div class="container"><button class="block1" onclick="addOrder()">Place Order</button>&nbsp;&nbsp;&nbsp <button class="block2" onclick="viewOrders()">View Order History</button></div><script>function addOrder() {
             location.href = location.href = "/src/addOrder/AddOrder.html";
         }
         function viewOrders() {
-            location.href = location.href = "../viewOrderHistory/viewOrderHistory.html";
+            location.href = location.href = "viewOrderHistory/ViewOrderHistory.html";
         }
 
         function inputStorage() {
            const userId = document.getElementById("fname").value;
             window.localStorage.setItem("userId",userId)
-        }
-
-    </script>
-</body>
-
-</html>
+        }</script></body></html>

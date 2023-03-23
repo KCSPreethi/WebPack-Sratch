@@ -1,4 +1,8 @@
-const ViewOrderService = require('../src/viewOrderHistory/ViewOrderService.js');
+/**
+ * @jest-environment jsdom
+ */
+
+import  ViewOrderService  from '../src/viewOrderHistory/ViewOrderService.js';
 
 describe('ViewOrderService', () => {
   beforeEach(() => {

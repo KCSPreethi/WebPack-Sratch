@@ -1,4 +1,4 @@
-export class ViewOrderService {
+export default class ViewOrderService {
   async viewOrderServiceFetch() {
     var userName = window.localStorage.getItem('userId');
     const response = await fetch(
@@ -30,4 +30,4 @@ export class ViewOrderService {
   }
 }
 
-module.exports = ViewOrderService;
+
