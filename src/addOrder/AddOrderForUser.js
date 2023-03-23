@@ -3,11 +3,10 @@ const qty = document.getElementById('quantity');
 var type;
 const price = document.getElementById('price');
 var esopType = document.getElementById('esopType');
-console.log('hi');
 
-const fetch = require('node-fetch');
 
-class PlaceOrder {
+
+export class PlaceOrder {
   placeOrder() {
     var content = this.getJson();
 
@@ -64,7 +63,7 @@ form.addEventListener('submit', function (event) {
   order.placeOrder();
 });
 
-function buySellCheck() {
+window.buySellCheck=function buySellCheck() {
   if (document.getElementById('buy').checked) {
     type = 'BUY';
     document.getElementById('esopType').disabled = true;
@@ -75,5 +74,3 @@ function buySellCheck() {
   }
 }
 
-
-module.exports = PlaceOrder;
